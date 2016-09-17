@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./node_modules/bootstrap/js/collapse.js"></script>
+    <script>
+    $(function() {
+        $(".wrap").fullpage({
+            sectionsColor: ['#0da5d6', '#2AB561', '#DE8910', '#16BA9D'],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            navigation: true,
+            menu: true,
+            navigationTooltips: ['关于我的', '我的作品', '我的技能', '自我评价'],
+            afterLoad: function(anchorLink, index) {
+                $(".section").removeClass("current");
+
+                setTimeout(function() {
+                    $(".section").eq(index - 1).addClass("current");
+                }, 200)
+            }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default gj-header" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="gj-logo">
+                    <a class="navbar-brand" href="#">个人主页</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./index.html">首&nbsp;页</a></li>
+                    <li><a href="./products.html">项&nbsp;目</a></li>
+                    <li><a href="./study.html">学&nbsp;习</a></li>
+                    <li><a href="javascript:;">随&nbsp;笔</a></li>
+                    <li><a href="javascript:;">关&nbsp;于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap">
+        <div class="section">
+            <div class="resume-content">
+                <div class="home-head">
+                    <div>
+                        <img src="images/logo.gif" alt="">
+                    </div>
+                </div>
+                <div class="home-info">
+                    <p>有志者自有千方百计，无志者只感千难万难</p>
+                    <div class="home-info-box">
+                        <p>我叫顾骏&nbsp;&nbsp;&nbsp;&nbsp; 26岁</p>
+                        <p>一名前端开发工程师，热爱技术，热爱生活</p>
+                        <p>我的愿望是：世界和平</p>
+                        <p>write less do more</p>
+                        <p>☝&nbsp;&nbsp; 还有这也是</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section page2">
+            <h3>我的作品</h3>
+            <div class="container">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="item">
+                        <img src="images/2.jpg">
+                        <div class="desc">淘淘商城</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="item">
+                        <img src="images/3.jpg">
+                        <div class="desc">淘淘商城</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="item">
+                        <img src="images/4.jpg">
+                        <div class="desc">淘淘商城</div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="item">
+                        <img src="images/5.jpg">
+                        <div class="desc">淘淘商城</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section page3">
+            <div class="container">
+                <h3>专业技能</h3>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">HTML / CSS</span>
+                    <div class="skill-box">
+                        <div></div>
+                    </div>
+                    <p>1、 熟练使用 HTML / CSS，能够写出符合W3C标准的页面，兼容主流浏览器，并准确还原设计图。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">JavaScript</span>
+                    <div class="skill-box">
+                        <div class="skill-js"></div>
+                    </div>
+                    <p>2、 熟练掌握原生 JavaScript，熟练操作BOM，DOM，对作用域链、闭包、原型链有深入的理解。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">jQuery</span>
+                    <div class="skill-box">
+                        <div class="skill-jq"></div>
+                    </div>
+                    <p>3、 熟练使用jQuery完成页面的功能，熟练使用zepto，理解移动框架提供的tap事件原理，业余时间也有去学习 jQuery源码。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">bootstrap</span>
+                    <div class="skill-box">
+                        <div class="skill-boot"></div>
+                    </div>
+                    <p>4、 熟练使用 HTML5 和 CSS3 ，熟练使用bootstrap进行响应式页面的开发。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">Ajax</span>
+                    <div class="skill-box">
+                        <div class="skill-ajax"></div>
+                    </div>
+                    <p>5、 了解http协议，熟练使用 Ajax 、json 进行前后端数据交互，了解jsonp。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">AngularJs</span>
+                    <div class="skill-box">
+                        <div class="skill-angu"></div>
+                    </div>
+                    <p>6、 了解Angular的核心概念和基本使用。</p>
+                </div>
+                <div class="skill clearfix">
+                    <span class="col-xs-12 col-sm-12">NodeJS</span>
+                    <div class="skill-box">
+                        <div class="skill-node"></div>
+                    </div>
+                    <p>7、 了解seajs，了解NodeJS。</p>
+                </div>
+            </div>
+        </div>
+        <div class="section page4">
+            <div class="last-page">
+                <div class="hidden-sm hidden-xs">
+                    <h3>Focus Me</h3>
+                    <p>工作积极认真，细心负责，有一定抗压能力</p>
+                    <p>善于在工作中发现问题、解决问题，有较强的分析能力</p>
+                    <p>低调沉稳、乐观向上、兴趣广泛</p>
+                    <p>有责任感和良好的团队合作精神</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/animate.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

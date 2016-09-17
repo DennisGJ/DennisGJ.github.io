@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../imgs/tank_p.jpg");
+    background-size:cover;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+canvas {
+    border: 2px solid black;
+    /*background-color: skyblue;*/
+    background-image: url(../imgs/3.jpg);
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box_line {
+    width: 250px;
+    height: 30px;
+    border: 2px solid #000;
+    background-color: #fff;
+    float: right;
+}
+
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.box .header {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: #000;
+}
+.box #explain {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+}
+.box #explain div {
+    margin-top: 16px;
+    width: 165px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./node_modules/bootstrap/js/collapse.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default gj-header" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="gj-logo">
+                    <a class="navbar-brand" href="#">个人主页</a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:;">首&nbsp;页</a></li>
+                    <li><a href="./products.html">项&nbsp;目</a></li>
+                    <li><a href="./study.html">学&nbsp;习</a></li>
+                    <li><a href="javascript:;">随&nbsp;笔</a></li>
+                    <li><a href="./resume.html">关&nbsp;于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="gj-banner">
+        <h1>我的主页</h1>
+        <p>前进的道路并没有那么拥挤，因为不是所有人都能坚持到最后</p>
+    </div>
+    <div class="study">
+        <div class="container">
+            <div class="title clearfix">
+                学习经历
+                <a class="fr" href="#"><span>更多></span></a>
+            </div>
+            <div class="container">
+                <div class="row" id="post-list">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="#">
+                                <div class="item-box">
+                                    <img src="images/1.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> HTML5/CSS3 </h3>
+                                        <p> HTML5并不仅仅只是做为HTML标记语言的一个最新版本，更重要的是它制定了Web应用开发的一系列标准。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>熟练使用</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="#">
+                                <div class="item-box">
+                                    <img src="images/2.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> jQuery </h3>
+                                        <p> jQuery就是一个js库，使用jQuery的话，会比使用JavaScript更简单,学习jQuery，主要学习jQuery的一大堆的api。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>熟练使用</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="#">
+                                <div class="item-box">
+                                    <img src="images/3.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> Bootstrap </h3>
+                                        <p> Bootstrap是基于HTML5和CSS3开发的，它在jQuery的基础上进行了更为个性化和人性化的完善，形成一套自己独有的网站风格，并兼容大部分jQuery插件。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>熟练使用</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="#">
+                                <div class="item-box">
+                                    <img src="images/4.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> Node.js</h3>
+                                        <p> Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>了解</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="study">
+        <div class="container">
+            <div class="title clearfix">
+                项目练习
+                <a class="fr" href="#"><span>更多></span></a>
+            </div>
+            <div class="container">
+                <div class="row" id="post-list">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="./pro/calc/index.html" target="_blank">
+                                <div class="item-box">
+                                    <img src="images/5.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> 计算器 </h3>
+                                        <p> 使用HTML5、CSS3、javascript实现简单计算器的功能，自适应布局，使用Ajax实现天气接口的功能。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>HTML5、CSS3、javascript、Ajax</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="./pro/wjs/index.html" target="_blank">
+                                <div class="item-box">
+                                    <img src="images/6.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> 微金所 </h3>
+                                        <p> 基于Bootstrap框架开发的同时适应PC端和移动端的网站，灵活使用栅格布局会有意想不到的收获。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="./pro/tank/index.html" target="_blank">
+                                <div class="item-box">
+                                    <img src="images/7.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> 坦克小游戏 </h3>
+                                        <p> 使用Canvas绘制制作的一款坦克对战小游戏，刚开始学习Canvas时的小创意。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>Canvas</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="items">
+                            <a href="#">
+                                <div class="item-box">
+                                    <img src="images/8.jpg" width="100%" alt="">
+                                    <div class="course">
+                                        <h3> 贯穿全栈React Native开发App</h3>
+                                        <p> 18小时纯干货讲解前沿技术React Native，以全栈角度学习前端到后端，学会它，1个人也能开发出一款产品。</p>
+                                    </div>
+                                    <div class="course-bottom">
+                                        <span>123</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gj-info">
+        <div class="container">
+            <div class="gj-info-right hidden-sm hidden-xs ">
+                <h2>前端的学习路线</h2>
+                <div class="icon-line"></div>
+                <p>HTML/CSS → javascript → jquery → H5C3
+                    <br/> Ajax → js高级（面向对象）→ canvas → 流行框架
+                    <br/> nodejs → 混合App
+                </p>
+                <ul class="icon-1">
+                    <li class="icon-1-1">HTML5</li>
+                    <li class="icon-1-2">CSS3</li>
+                    <li class="icon-1-3">Canvas</li>
+                    <li class="icon-1-4">Angular</li>
+                    <li class="icon-1-5">Node.js</li>
+                </ul>
+            </div>
+            <div class="icon-2"></div>
+        </div>
+    </div>
+    <div class="gj-game">
+        <div class="container">
+            <div class="row" id="post-list">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="game-info hidden-sm hidden-xs">
+                        <p>《flappy bird》是一款由来自越南的独立游戏开发者Dong Nguyen所开发的作品</p>
+                        <br>
+                        <p>游戏于2013年5月24日上线，并在2014年2月突然暴红</p>
+                        <br>
+                        <p>我们用原生的JS也可以简单实现了</p>
+                        <br>
+                        <p>操作说明：鼠标左键</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div id="game">
+                        <div class="gameStart">
+                            <input id="start" type="button" value="开始游戏">
+                        </div>
+                        <div id="bird"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gj-footer">
+        <div class="container">
+            <p><span></span>&nbsp;&nbsp;QQ:520176232</p>
+            <p><span></span>&nbsp;&nbsp;邮箱：gujun.0628@163.com</p>
+            <p>最后更新于2016年9月6日</p>
+        </div>
+    </div>
+    <div class="actGotop">
+        <a href="javascript:;" title="Top"></a>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/flappybird.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
